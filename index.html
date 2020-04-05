@@ -18,13 +18,48 @@
                 QUANTUM
             </div>
 
-            <div class="header__search">
+            <form class="header__search">
 
-            </div>
+                <div class="header__search-input-wrapper">
+                    <input type="text" placeholder="Search goods" class="header__search-input">
+                </div>
+
+                <div class="header__search-dropdown">
+
+                    <div data-select class="header-select">
+                        <div class="header-select__title" data-select-title>CATEGORY</div>
+                        <ul class="header-select__dropdown hidden">
+                            <li class="header-select__dropdown-item" data-select-item="mobile">Mobile</li>
+                            <li class="header-select__dropdown-item" data-select-item="tablet">Tablet</li>
+                            <li class="header-select__dropdown-item" data-select-item="laptop">Laptop</li>
+                        </ul>
+                    </div>
+
+                    <select name="" id="selectReal" value="none" class="hidden">
+                        <option value="none">CATEGORY</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="laptop">Laptop</option>
+                    </select>
+
+                </div>
+
+                <div class="header__search-btn-wrapper">
+                    <button type="submit" class="header__search-btn">
+                        <img src="./img/header/search-icon.svg" alt="search icon">
+                    </button>
+                </div>
+
+            </form>
 
             <div class="header__btns">
 
             </div>
         </div>
     </header>
+
+
+    <!-- USER SCRIPTS  -->
+    <script src="./js/main.js"></script>
+
 </body>
