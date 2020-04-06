@@ -4,8 +4,8 @@
 }
 
 .header__container {
+    padding: 30px 41px 38px 23px;
     position: relative;
-    padding: 30px 41px 0 23px;
     max-width: 1110px;
     margin: 0 auto;
     display: flex;
@@ -27,7 +27,7 @@
     display: flex;
     width: 468px;
     height: 46px;
-    border: 2px solid rgb(245, 245, 245); 
+    border: $border; 
     border-radius: 4px;
 }
 
@@ -45,7 +45,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 2.143;
-    border: 2px solid rgb(245, 245, 245);
+    border: $border;
     color: #000;
 
     &::placeholder {
@@ -58,7 +58,8 @@
     justify-content: center;
     align-items: center;
     width: 142px;
-    border-right: 2px solid rgb(245, 245, 245);
+    border-right: $border;
+    cursor: pointer;
 
 }
 
@@ -77,8 +78,11 @@
     border: none;
 }
 
-.header__btns {
+.header__nav {
+    border-top: $border;
+    
 }
+    
 
 
 

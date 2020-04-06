@@ -1,0 +1,14 @@
+// Navigation text 
+
+@mixin text-nav-medium {
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    line-height: 1;
+}
+
+@mixin text-nav-lite {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(179, 179, 179);
+    line-height: 1;
+}

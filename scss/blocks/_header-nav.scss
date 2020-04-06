@@ -1,0 +1,47 @@
+.header-nav {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1110px;
+    height: 60px;
+    border-left: $border;
+    border-right: $border;
+}
+
+.header-nav__categories {
+    border-right: $border;
+}
+
+.header-nav__deals {
+    padding: 0 38px;
+    border-right: $border;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-nav__link {
+    margin-right: 35px;
+    @include text-nav-medium;
+    transition: all .2s ease;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.header-nav__select {
+    display: flex;
+}
+
+.header-nav__select-item {
+    border-right: $border;
+
+    &:last-child {
+        border-right: none;
+    }
+
+}

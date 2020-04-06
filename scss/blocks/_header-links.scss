@@ -1,0 +1,48 @@
+.header__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    color: rgb(128, 128, 128);
+    transition: all .2s ease;
+
+    &:hover {
+        color: $blue;
+
+        .icon-svg {
+            fill: $blue;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__link-icon {
+    margin-right: 18px;
+    position: relative;
+}
+
+.header__link--notify .header__link-icon::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $blue;
+
+}
+
+.header__link-text {
+    font-weight: 500;
+    line-height: 2.143;
+
+}
