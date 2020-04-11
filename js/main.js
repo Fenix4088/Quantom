@@ -33,6 +33,16 @@ selectAllElements.forEach(function(item){
     })
 });
 
+// OWl Carousel 
+$(document).ready(function(){
+    $("#slider__carousel").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        navText: []
+    });
+  });
+
 
 
 
