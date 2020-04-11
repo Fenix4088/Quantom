@@ -1,14 +1,33 @@
 // Navigation text 
 
 @mixin text-nav-medium {
-    font-weight: 500;
     color: rgb(128, 128, 128);
     line-height: 1;
 }
 
 @mixin text-nav-lite {
-    font-size: 14px;
-    font-weight: 500;
     color: rgb(179, 179, 179);
     line-height: 1;
+}
+
+
+// LINKS
+@mixin grey-link {
+    line-height: 2.14;
+    color: rgba(255, 255, 255, 0.502);
+    transition: all .3s ease;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+@mixin dark-grey-link {
+    line-height: 2.14;
+    color:  rgb(179, 179, 179);
+    transition: all .3s ease;
+
+    &:hover {
+        color: $blue;
+    }
 }

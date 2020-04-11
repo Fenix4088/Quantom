@@ -34,11 +34,8 @@
 }
 
 .carousel__item-text {
-    p {
-        font-size: 14px;
-        line-height: 2.14;
-        font-weight: 500;
-        color: rgba(255, 255, 255, 0.502);
+    a {
+        @include grey-link;
     }
 
 }

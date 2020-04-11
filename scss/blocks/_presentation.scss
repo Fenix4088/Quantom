@@ -1,0 +1,88 @@
+.presentation {
+    margin-bottom: 30px;
+}
+
+.presentation__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation__card {
+    display: flex;
+    min-height: 330px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 31.53%;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+.presentation__card--one, .presentation__card--two {
+    text-align: center;
+    align-items: center;
+}
+
+.presentation__card--two {
+    padding-bottom: 30px;
+    justify-content: flex-end;
+    background-image: url(../img/presentation/iwatch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation__card--three {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: transparent;
+    box-shadow: unset;
+}
+
+.presentation__card-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    line-height: 1.5;
+}
+
+.presentation__card-title--white {
+    max-width: 190px;
+    color: #fff;
+}
+
+.presentation__card-link {
+    margin-bottom: 18px;
+    a {
+        @include dark-grey-link;
+
+    }
+}
+
+
+  
+.presentation__card-img {
+}
+
+
+.presentation__card-subcard {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+.presentation__card-subcard-img {
+}
+
+.presentation__card-subcard-text {
+    max-width: 140px;
+    color: rgb(102, 102, 102);
+    line-height: 2.143;
+}
+
+  
