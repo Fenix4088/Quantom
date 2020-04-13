@@ -10,16 +10,13 @@
 }
 
 .shop__sidebar-navigation {
-    position: relative;
     margin-bottom: 30px;
+    position: relative;
     z-index: 100;
 }
 
 .shop__sidebar-list {
-    border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
-
+    @include card;
 }
 
 
@@ -45,21 +42,21 @@
         color: $blue;
     }
 
-    &:hover .shop__sidebar-list-item::after {
-        background-color: red;
-    }
-
     &:hover .shop__sidebar-sublist {
+        display: block;
         left: 100%;
-
     }
 
     &::after {
         content: url(../img/shop/arrow-icon.svg);
         position: absolute;
         right: 24px;
+        transition: all .3s ease;
     }
 
+    &:hover::after {
+        transform: rotate(180deg);
+    }
 
     
 }
@@ -76,27 +73,19 @@
 
 .shop__sidebar-navigation-title {
     width: 100%;
-    color: rgb(128, 128, 128);
+    color: $grey-middle;
     transition: all .3s ease;
 }
 
 
 .shop__sidebar-sublist {
+    display: none;
     min-width: 200px;
     position: absolute;
     top: 0;
     left: 10%;
-    border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+    @include card;
     z-index: -1;
-}
-
-.shop__sidebar-list-item:nth-child(7) .shop__sidebar-sublist,
-.shop__sidebar-list-item:nth-child(8) .shop__sidebar-sublist,
-.shop__sidebar-list-item:nth-child(9) .shop__sidebar-sublist,
-.shop__sidebar-list-item:nth-child(10) .shop__sidebar-sublist {
-    
 }
 
 
@@ -109,33 +98,173 @@
     align-items: center;
     border-bottom: $border;
     cursor: pointer;
+    transition: all .3s ease;
+
+    a {
+        color: $grey-middle;
+
+    }
+
+    &:hover a {
+        color: $blue;
+    }
+
+    &:hover {
+        background-color: #f1f1f1;
+    }
+
 }
 
   
 
 .shop__sidebar-banner {
+    padding: 0 40px;
+    min-height: 330px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    @include card;
 }
 
 .shop__sidebar-banner-title {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $grey-dark;
+    line-height: 1;
+
 }
 
 .shop__sidebar-banner-subtitle {
+    font-weight: 700;
+    color: $grey-lite;
+    line-height: 2.143;
 }
 
 .shop__items-wrapper {
+    margin-left: 30px;
+    width: 74.32%;
+    max-width: 830px;
 }
 
 .shop__items-nav {
+    margin-bottom: 30px;
+    padding-left: 38px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include card;
+    color: $grey-middle;
+    cursor: pointer;
 }
 
 .shop__items-nav-toggle {
+    display: inline-block;
+    margin-right: 50px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .shop__items {
+    display: flex;
+    flex-flow: column nowrap; 
 }
 
 .shop__items-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .shop__item {
+    padding: 20px 15px 35px;
+    @include card;
+    width: 30.72%;
+    max-width: 255px;
 }
+
+.shop__item-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop__item-header-sale {
+    padding: 0 3px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(179, 179, 179);
+
+}
+
+.shop__item-icons {
+    display: flex;
+}
+.shop__item-header-menu {
+    margin-right: 25px;
+}
+
+.shop__item-header-wish {
+}
+
+.shop__item-icon-hart {
+    fill:rgb(216, 214, 214);
+}
+
+.shop__item-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop__item-main-img {
+    margin-bottom: 30px;
+}
+
+.shop__item-main-title {
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.5;
+    color: $grey-dark;
+}
+
+.shop__item-main-ranking {
+}
+
+.shop__item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.shop__footer-price {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(102, 102, 102);      
+}
+
+.shop__footer-icon {
+    margin-left: 8px;
+}
+
+
+
+
+

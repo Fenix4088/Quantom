@@ -44,6 +44,16 @@ $(document).ready(function(){
   });
 
 
+//   Click on icons inside cart item 
+
+const hartIcon = document.querySelector('.shop__item-icon-hart');
+
+hartIcon.addEventListener('click', function(){
+    hartIcon.classList.toggle('active');
+
+  })
+
+
 
 
 
