@@ -1,0 +1,44 @@
+.shop__item-main-rating {
+    margin-bottom: 32px;
+    position: relative;
+    min-width: 120px;
+    min-height: 20px;
+    z-index: 1;
+
+}
+
+.shop__item-main-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    font-size: inherit;
+    background-image: url(../img/shop/star.svg);
+    background-size: 20px auto;
+    appearance: none;
+    cursor: pointer;
+    &:checked {
+        background-image: url(../img/shop/starOn.svg);
+    }
+}
+
+.shop__item-main-star:nth-of-type(1) {
+    z-index: 5;
+    width: 20px;
+}
+.shop__item-main-star:nth-of-type(2) {
+    z-index: 4;
+    width: 40px;
+}
+.shop__item-main-star:nth-of-type(3) {
+    z-index: 3;
+    width: 60px;
+}
+.shop__item-main-star:nth-of-type(4) {
+    z-index: 2;
+    width: 80px;
+}
+.shop__item-main-star:nth-of-type(5) {
+    z-index: 1;
+    width: 100px;
+}

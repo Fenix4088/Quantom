@@ -184,9 +184,11 @@
 
 .shop__item {
     padding: 20px 15px 35px;
+    position: relative;
     @include card;
     width: 30.72%;
     max-width: 255px;
+    overflow: hidden;
 }
 
 .shop__item-header {
@@ -216,13 +218,15 @@
 }
 .shop__item-header-menu {
     margin-right: 25px;
+
 }
 
-.shop__item-header-wish {
-}
-
-.shop__item-icon-hart {
+.shop__item-icon-hart, 
+.shop__item-icon-menu, 
+.shop__item-icon-cart  {
     fill:rgb(216, 214, 214);
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
 .shop__item-main {
@@ -243,14 +247,12 @@
     color: $grey-dark;
 }
 
-.shop__item-main-ranking {
-}
-
 .shop__item-footer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 
 .shop__footer-price {
@@ -265,6 +267,43 @@
 }
 
 
+.shop__item-specification {
+    padding: 0 15px;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(24, 117, 240, .5);
+    backdrop-filter: blur(5px);
+    transition: all .5s ease;
+    z-index: 100;
+}
+
+.shop__item-specification--show {
+    top: 60%;
+}
 
 
+.shop__specification-list {
+    display: block;
+    position: relative;
+    font-size: 12px;
+}
 
+.shop__specification-list-item {
+    margin-bottom: 8px;
+    display: flex;
+    color: #fff;
+}
+
+.shop__specification-list-name {
+    margin-right: 20px;
+    min-width: 100px;
+}
+
+.shop__specification-list-property {
+}

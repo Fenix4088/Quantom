@@ -71,15 +71,27 @@ textarea {
 }
 
 
-.icon-svg {
+.icon-svg, .icon-star {
     fill: rgb(128, 128, 128);
+}
+
+.icon-star{
+    width: 20px;
+    height: 20px;
 }
 
 
 // Styles for Active class for icons 
 
 .shop__item-icon-hart.active {
-    fill: red;
+    fill: rgb(243, 6, 46);
 }
+
+
+.shop__item-icon-menu path.active, 
+.shop__item-icon-cart.active{
+    fill: $blue;
+}
+
 
 
